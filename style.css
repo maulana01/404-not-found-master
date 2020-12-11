@@ -1,0 +1,138 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+.logo {
+  margin: 40px 0 0 77px;
+}
+
+.logo a {
+  text-decoration: none;
+  color: #333333;
+}
+
+.logo h3{
+  font-family: 'Inconsolata', monospace;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 1.5em;
+  line-height: 25.18px;
+}
+
+#errPage {
+  margin: 235px 823.78px 367.57px 77px;
+}
+
+.err-img{
+  grid-column: 1/4;
+}
+
+.message{
+  grid-column: 4/9;
+  margin-left: 118.78px;
+  margin-top: -50px;
+}
+
+.message h1 {
+  font-family: 'Space Mono', monospace;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 64px;
+  line-height: 94.78px;
+  color: #333333;
+}
+
+.message h3 {
+  font-family: 'Space Mono', monospace;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 35.54px;
+  max-width: 390px;
+  color: #4f4f4f;
+}
+
+.message button {
+  margin-top: 44px;
+  padding: 10px 55px;
+  background: #333333;
+}
+.message p {
+  font-family: 'Space Mono';
+  font-size: 0.9em;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 20.73px;
+  color: white;
+}
+
+.err-img img {
+  width: 539.22px;
+  height: 447.43px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  gap: 10px;
+  width: 100%;
+  max-width: 1230px;
+  box-sizing: border-box;
+}
+
+footer p {
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  color: #333333;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 0.8em;
+  padding-bottom: 3.1em;
+}
+
+@media screen and (max-width: 500px) {
+  .logo {
+    margin-left: 33px;
+  }
+  
+  #errPage {
+    margin: 54px 0 300px auto;
+  }
+  
+  .err-img{
+    grid-column: 2/ span 2;
+  }
+
+  .err-img img {
+    width: 286.83px;
+    height: 238px;
+  }
+
+  .message {
+    margin: 0;
+    grid-column: 1/ span 6;
+    grid-row: 2;
+  }
+
+  .message h1 {
+    font-size: 3em;
+    line-height: 71.09px;
+  }
+
+  .message h3 {
+    font-size: 1.2em;
+  }
+
+  .message button {
+    padding: 10px 65px;
+  }
+
+  .grid {
+    grid-template-columns: repeat(6, 1fr);
+    width: 90%;
+    max-width: 450px;
+  }
+}
